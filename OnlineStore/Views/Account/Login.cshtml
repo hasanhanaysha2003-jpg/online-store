@@ -1,0 +1,16 @@
+@model OnlineStore.ViewModels.LoginViewModel
+@{ ViewData["Title"] = "Login"; }
+<section class="auth-page">
+    <div class="auth-card">
+        <div class="auth-icon">S</div>
+        <h1>Welcome Back</h1>
+        <p class="auth-subtitle">Login to continue shopping at Online Store.</p>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+            <div class="auth-field"><label asp-for="Email">Email Address</label><input asp-for="Email" class="form-control" placeholder="name@example.com" autocomplete="email" /><span asp-validation-for="Email" class="text-danger"></span></div>
+            <div class="auth-field"><label asp-for="Password">Password</label><input asp-for="Password" class="form-control" placeholder="Enter your password" autocomplete="current-password" /><span asp-validation-for="Password" class="text-danger"></span></div>
+            <button class="btn btn-primary auth-submit">Login</button>
+        </form>
+        <p class="auth-switch">New to Online Store? <a asp-action="Register">Create an account</a></p>
+    </div>
+</section>

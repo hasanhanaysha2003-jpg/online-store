@@ -1,0 +1,2 @@
+@model OnlineStore.Models.Category
+<h1>Delete Category</h1><p>Delete <strong>@Model.Name</strong>? This is allowed only when it has no products.</p><form method="post"><input type="hidden" asp-for="Id"/><button class="btn btn-danger" onclick="return confirm('Delete this category?')">Delete</button> <a asp-action="Index">Cancel</a></form>

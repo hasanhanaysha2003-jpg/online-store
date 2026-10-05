@@ -1,0 +1,2 @@
+@model IEnumerable<OnlineStore.Models.Order>
+<h1>Manage Orders</h1><table class="table"><thead><tr><th>Id</th><th>Customer</th><th>Date</th><th>Total</th><th>Status</th><th></th></tr></thead><tbody>@foreach(var o in Model){<tr><td>@o.Id</td><td>@o.CustomerName</td><td>@o.OrderDate.ToString("g")</td><td>$@o.TotalPrice</td><td>@o.Status</td><td><a asp-action="Details" asp-route-id="@o.Id">Details</a></td></tr>}</tbody></table>

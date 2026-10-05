@@ -1,0 +1,5 @@
+@model OnlineStore.ViewModels.HomeViewModel
+@{ ViewData["Title"] = "Home"; }
+<section class="hero"><h1>Welcome to Online Store</h1><p>A simple store for electronics, clothing, and books.</p><form class="home-search" asp-controller="Products" asp-action="Index" method="get"><input name="search" type="search" placeholder="Search for a product..." aria-label="Search products" /><button type="submit">Search</button></form><a class="hero-browse" asp-controller="Products" asp-action="Index">Browse all products</a></section>
+<h2>Categories</h2><div class="row mb-4">@foreach(var category in Model.Categories) { <div class="col-md-4"><a class="category-box" asp-controller="Products" asp-action="Index" asp-route-categoryId="@category.Id">@category.Name</a></div> }</div>
+<h2>Featured Products</h2><div class="row">@foreach(var product in Model.Products) { <partial name="_ProductCard" model="product" /> }</div>

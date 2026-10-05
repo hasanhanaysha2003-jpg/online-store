@@ -1,0 +1,3 @@
+using System.ComponentModel.DataAnnotations;
+namespace OnlineStore.Models;
+public class Order { public int Id { get; set; } [Required, StringLength(100)] public string CustomerName { get; set; } = string.Empty; [Required, EmailAddress] public string CustomerEmail { get; set; } = string.Empty; [Required, StringLength(30)] public string CustomerPhone { get; set; } = string.Empty; [Required, StringLength(300)] public string Address { get; set; } = string.Empty; public DateTime OrderDate { get; set; } public decimal TotalPrice { get; set; } public string Status { get; set; } = "Pending"; public List<OrderItem> OrderItems { get; set; } = []; }

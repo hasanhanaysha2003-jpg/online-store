@@ -1,0 +1,2 @@
+@model OnlineStore.Models.Product
+<h1>Delete Product</h1><p>Are you sure you want to delete <strong>@Model.Name</strong>?</p><form method="post"><input type="hidden" asp-for="Id"/><button class="btn btn-danger" onclick="return confirm('Delete this product?')">Delete</button> <a asp-action="Index">Cancel</a></form>

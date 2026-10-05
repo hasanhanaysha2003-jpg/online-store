@@ -1,0 +1,8 @@
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.csproj.AssemblyReference.cache
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.AssemblyInfoInputs.cache
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.AssemblyInfo.cs
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.csproj.CoreCompileInputs.cache
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.RazorAssemblyInfo.cache
+C:\Users\Students\Desktop\mustafaWeb\OnlineStore\verifyobj\Debug\net8.0\OnlineStore.RazorAssemblyInfo.cs

@@ -1,0 +1,2 @@
+@model IEnumerable<OnlineStore.Models.Category>
+<h1>Manage Categories</h1><a class="btn btn-primary mb-3" asp-action="Create">Create Category</a><table class="table"><thead><tr><th>Name</th><th>Products</th><th></th></tr></thead><tbody>@foreach(var c in Model){<tr><td>@c.Name</td><td>@c.Products.Count</td><td><a asp-action="Edit" asp-route-id="@c.Id">Edit</a> | <a asp-action="Delete" asp-route-id="@c.Id">Delete</a></td></tr>}</tbody></table>
